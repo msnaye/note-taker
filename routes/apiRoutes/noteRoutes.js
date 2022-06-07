@@ -1,9 +1,10 @@
 const fs = require('fs');
 const router = require('express').Router();
 const notes = require('../../db/db.json');
+const path = require('path');
 
 
-router.get('/notes', (req, res)=>{
+router.get('/api/notes', (req, res)=>{
     // let results = notes;
     // if (re.query){
     //     results = filterByQuery (req.query, results);
